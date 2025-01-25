@@ -1,8 +1,19 @@
+import '../styles/loading.css'
+
 function Loading() {
   return (
-    <div>
-      <h1>Julie AT</h1>
-      <p>Chargement.</p>
+    <div className="loading">
+    <div className="loading_Text">
+      <h1 className="loading_text_title">Julie AT</h1>
+      <div className="loading_dots">
+          <span className="dot dot1"></span>
+          <span className="dot dot2"></span>
+          <span className="dot dot3"></span>
+          <span className="dot dot4"></span>
+          <span className="dot dot5"></span>
+      </div>
+      <p className="loading_text_catchphrase">Transformer les idées en réalité numérique...</p>
+    </div>
     </div>
   );
 }

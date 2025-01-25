@@ -8,14 +8,19 @@ import Contact from './pages/Contact';
 import Loading from './pages/Loading';
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(() => {
+    return sessionStorage.getItem('hasVisited') ? false : true;
+  });
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
+    if (!sessionStorage.getItem('hasVisited')) {
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+        sessionStorage.setItem('hasVisited', 'true');
+      }, 5000);
+  
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
