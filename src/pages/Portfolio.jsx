@@ -1,8 +1,9 @@
+import Navbar from "../Components/Navbar";
+
 function Portfolio() {
   return (
     <div>
-      <h1>Portfolio</h1>
-      <p>Ceci est la page portfalio.</p>
+      <Navbar /> 
     </div>
   );
 }
