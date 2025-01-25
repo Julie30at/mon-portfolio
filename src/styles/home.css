@@ -1,3 +1,4 @@
+/* Styles généraux pour .home */
 .home {
   position: relative; 
   width: 100%;
@@ -10,6 +11,7 @@
   color: black; 
 }
 
+/* Fond de la section home */
 .home::before {
   content: ""; 
   position: absolute; 
@@ -24,17 +26,19 @@
   z-index: -1; 
 }
 
+/* Styles pour l'image de profil */
 .home_photo {
   width: 320px; 
   height: 320px;
   border-radius: 60px;
   object-fit: cover; 
-  margin-top: 200px;
+  margin-top: 100px;
   margin-right: 250px;
   margin-bottom: 20px; 
   box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
 }
 
+/* Styles pour le texte dans le paragraphe */
 .home p {
   font-size: 40px; 
   font-weight: 600;
@@ -44,16 +48,23 @@
   align-items: center; 
 }
 
-.static-text {
-  display: inline; 
-  white-space: nowrap; 
+/* Styles pour le texte statique (Julie AT) dans le h1 */
+.home h1.static-text {
+  font-size: 40px; 
+  font-weight: 600;
+  margin-right: 250px; 
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 0px;
 }
 
+/* Styles pour le texte dynamique (Développeuse Web Freelance) */
 .dynamic-text {
   overflow: hidden; 
   white-space: nowrap; 
   width: 0; 
-  animation: typing 8s steps(30, end) infinite alternate; 
+  animation: typing 10s steps(30, end) 1s infinite alternate; /* Temps réduit à 10s */
   display: inline-block;
   margin-left: 10px; 
 }
@@ -68,10 +79,13 @@
   0% {
     width: 0; 
   }
-  50% {
-    width: 100%; 
+  40% {
+    width: 100%; /* Texte complètement écrit */
+  }
+  70% {
+    width: 100%; /* Texte reste affiché */
   }
   100% {
-    width: 0; 
+    width: 0; /* Texte réécrit */
   }
 }

@@ -8,10 +8,10 @@ function Home() {
       <Navbar /> 
       <div className="home">
         <img src={julieAtPhoto} alt="Julie AT" className="home_photo" />
+        <h1 className="static-text">Julie AT</h1> {/* Julie AT dans un h1 */}
         <p>
-          <span className="static-text">Julie AT </span>
           <span className="dynamic-text">
-            <span className="highlight"> Développeuse Web</span> Freelance
+            <span className="highlight">Développeuse Web</span> Freelance
           </span>
         </p>
       </div>
