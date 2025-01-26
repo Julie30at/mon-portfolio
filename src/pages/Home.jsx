@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <Navbar /> 
-      <div className="home">
+      <section className="home">
         <img src={julieAtPhoto} alt="Julie AT" className="home_photo" />
         <h1 className="static-text">Julie AT</h1> {/* Julie AT dans un h1 */}
         <p>
@@ -14,7 +14,7 @@ function Home() {
             <span className="highlight">Développeuse Web</span> Freelance
           </span>
         </p>
-      </div>
+      </section>
     </div>
   );
 }

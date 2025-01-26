@@ -3,7 +3,7 @@ import '../styles/loading.css'
 function Loading() {
   return (
     <div className="loading">
-    <div className="loading_Text">
+     <section className="loading_Text">
       <h1 className="loading_text_title">Julie AT</h1>
       <div className="loading_dots">
           <span className="dot dot1"></span>
@@ -13,7 +13,7 @@ function Loading() {
           <span className="dot dot5"></span>
       </div>
       <p className="loading_text_catchphrase">Transformer les idées en réalité numérique...</p>
-    </div>
+     </section>
     </div>
   );
 }
