@@ -4,16 +4,16 @@ import '../styles/home.css'
 
 function Home() {
   return (
-    <div>
+    <div className="home_page">
       <Navbar /> 
       <section className="home">
-        <img src={julieAtPhoto} alt="Julie AT" className="home_photo" />
-        <h1 className="static-text">Julie AT</h1> {/* Julie AT dans un h1 */}
-        <p>
+        <img src={julieAtPhoto} alt="Portrait de Julie AT" className="home_photo" />
+        <h1 className="static-text">Julie AT</h1> 
+        <h2>
           <span className="dynamic-text">
             <span className="highlight">Développeuse Web</span> Freelance
           </span>
-        </p>
+        </h2>
       </section>
     </div>
   );

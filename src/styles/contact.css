@@ -1,0 +1,132 @@
+.contact {
+  margin-left: 11rem; 
+  background-color: rgba(184, 203, 208, 0.50);
+  padding-bottom: 2.5rem;
+  height: 100%;
+}
+
+.contact_title {
+  text-transform: uppercase;
+  text-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.15), 
+               0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+  border-bottom: 0.125rem solid #137C8B;
+  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 
+              0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
+  padding: 1.25rem 0 0.625rem 6.25rem;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; 
+  margin-top: 3rem;
+}
+
+#contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.form_group_row {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  width: 100%;
+}
+
+.form_group_row .form_group {
+  flex: 1;
+  max-width: 23.625rem;
+}
+
+.form_group textarea {
+  width: 30rem;
+}
+
+.form_group input,
+textarea {
+  border-radius: 25px;
+  border: 1px solid rgba(184, 203, 208, 0.50);
+  background: #137C8B;
+  font-family: 'montserrat';
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff; 
+  padding: 1.3rem;
+  width: 23.625rem;
+  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 
+              0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
+}
+
+.form_group input::placeholder,
+textarea::placeholder {
+  color: #fff; 
+  font-family: 'montserrat';
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+button {
+  background-color: #137C8B;
+  color: #fff;
+  padding: 0.625rem 2.5rem;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: 0.1875rem solid rgba(184, 203, 208, 0.50);
+  border-radius: 1.5625rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  overflow: hidden; 
+}
+
+button:hover {
+  background-color: #0a5e6f;
+  transform: scale(1.05);
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.icon_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 10rem;
+}
+
+.handshake_icon,
+.envelope_icon,
+.location_icon,
+.phone_icon {
+  font-size: 3rem;
+  color: #137C8B;
+}
+
+.contact_email, 
+.contact_location,
+.contact_phone {
+  display: flex;
+  flex-direction: column;
+  color: #137C8B;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+

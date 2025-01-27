@@ -1,5 +1,5 @@
 .portfolio {
-  margin-left: 13.375rem;
+  margin-left: 11rem;
   background-color: rgba(184, 203, 208, 0.50);
 }
 
@@ -19,13 +19,23 @@
   margin-top: 0;
 }
 
+.portfilio_title_project {
+  display: flex;
+  font-size: 2.125rem;
+  font-weight: 600;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
 .portfolio_project {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   grid-gap: 2rem;
-  max-width: 75rem;
+  max-width: 60rem;
   margin: 4.125rem auto; 
   justify-content: center;
+  padding-bottom: 3rem;
 }
 
 .portfolio_project > div {
@@ -69,9 +79,13 @@
   animation-delay: 1.2s;
 }
 
+.portfolio_project > div:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
 .portfolio_project img {
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%; 
   object-fit: cover;
   margin-bottom: 0.625rem;

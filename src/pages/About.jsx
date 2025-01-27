@@ -36,7 +36,7 @@ function About() {
         <h1 className="about_title">à propos de moi</h1>
         <section className="about_info">
           <section className="about_info_presentation">
-            <section className="about_info_presentation_text">
+            <div className="about_info_presentation_text">
               <p>
                 <strong>Développeuse web</strong> Freelance spécialisée en 
                 <strong> <a href="#react-section">React</a></strong>, je conçois des interfaces visuelles modernes et réactives pour des applications et sites web.
@@ -51,8 +51,8 @@ function About() {
                 Je propose mes services pour la <strong>création de sites web</strong>, en mettant l’accent sur des aspects essentiels tels que le 
                 <strong> <a href="#seo-section">SEO</a></strong> et la gestion de projet, afin d’assurer des solutions performantes et optimisées.
               </p>
-            </section>
-            <section className="about_info_presenation_perso">
+            </div>
+            <div className="about_info_presenation_perso">
               <h2>Informations personnelles</h2>
               <ul>
                 <li>Julie AT</li>
@@ -60,20 +60,21 @@ function About() {
                 <li>Nîmes, France</li>
                 <li>julie30at@gmail.com</li>
                 <li>06.83.02.79.39</li>
-                <li>Télétravail</li>
+                <li>Certification professionnelle niveau V</li>
+                <li>Développeur informatique</li>
               </ul>
               <div className="about_info_presenation_perso_CV">
                 <NavLink to="/cv">CV</NavLink>
               </div>
-            </section>
+            </div>
           </section>
           <section className="about_info_langage">
             <h2>Langages de programmation</h2>
-            <section className="about_info_langage_logo">
+            <div className="about_info_langage_logo">
               <img src={jsLogo} alt="logo JavaScript" />
               <img src={htmlLogo} alt="logo HTML" />
               <img src={sassCssLogo} alt="logo Sass / CSS" />
-            </section>
+            </div>
           </section>
           <section id="react-section" className="about_info_library">
             <h2>Bibliothèque</h2>
@@ -94,6 +95,7 @@ function About() {
           <section id="seo-section" className="about_info_seo">
             <h2>SEO</h2>
             <p>Le SEO c'est l'ensemble des techniques qui permettent d'améliorer la visibilité d'un site web dans les moteurs de recherche comme Google.</p>
+            <p><strong>Outils :</strong> Google Analytics, Google Search Console, GTmetrix, Lighthouse</p>
           </section>
         </section>
       </section>

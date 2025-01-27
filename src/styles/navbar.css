@@ -4,7 +4,7 @@
   position: fixed; 
   top: 0;
   left: 0;
-  width: 15.625rem;
+  width: 13rem;
   height: 100vh; 
   background-color: #137C8B; 
   border: 0.1875rem solid #B8CBD0;
@@ -23,8 +23,9 @@
 }
 
 .navbar_header nav a {
-  color: #F5F5F5;
-  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
   border: 0.0625rem solid #B8CBD0;
@@ -60,7 +61,7 @@
 }
 
 .navbar_footer_link a {
-  color: #F5F5F5;
+  color: black;
   transition: transform 0.3s ease;
 }
 
@@ -69,7 +70,7 @@
 }
 
 .navbar_footer_mention {
-  color: #F5F5F5;
+  color: black;
   text-align: center;
   font-size: 1rem;
   font-weight: 500;

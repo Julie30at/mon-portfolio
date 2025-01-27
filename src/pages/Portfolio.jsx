@@ -18,6 +18,7 @@ function Portfolio() {
       <Navbar /> 
       <section className="portfolio">
         <h1 className="portfolio_title">portfolio</h1>
+        <h2 className="portfilio_title_project">Focus projets de formation.</h2>
         <section className="portfolio_project">
           <div className="portfolio_project_ohmyfood">
              <img src={ohMyFoodPhoto} alt="ohmyfood photo" />
