@@ -11,39 +11,46 @@ import logoNinaCarducci from '../assets/logoNinaCarducci.webp';
 import argentBankPhoto from '../assets/argentBankPhoto.webp';
 import logoArgentBank from '../assets/logoArgentBank.webp';
 
-
 function Portfolio() {
   return (
     <div>
       <Navbar /> 
       <section className="portfolio">
         <h1 className="portfolio_title">portfolio</h1>
-        <h2 className="portfilio_title_project">Focus projets de formation.</h2>
-        <section className="portfolio_project">
-          <div className="portfolio_project_ohmyfood">
-             <img src={ohMyFoodPhoto} alt="ohmyfood photo" />
-             <img src={logoOhMyFood} alt="ohmyfood logo" />
-          </div>
-          <div className="portfolio_project_sophiebluel">
-             <img src={sophieBluelPhoto} alt="Sophie Bluel photo" />
-             <img src={logoSophieBluel} alt="Sophie Bluel logo" />
-          </div>
-          <div className="portfolio_project_kasa">
-             <img src={kasaPhoto} alt="Kasa photo" />
-             <img src={logoKasa} alt="Kasa logo" />
-          </div>
-          <div className="portfolio_project_ninacarducci">
-             <img src={ninaCarducciPhoto} alt="Nina Carducci photo" />
-             <img src={logoNinaCarducci} alt="Nina Cardicci logo" />
-          </div>
-          <div className="portfolio_project_argentbank">
-             <img src={argentBankPhoto} alt="ArgentBank photo" />
-             <img src={logoArgentBank} alt="Argent Bank logo" />
-          </div>
-        </section>
+        <div className="portfolioProject">
+          <h2 className="portfilio_title_project">Focus projets de formation.</h2>
+          <section className="portfolio_project">
+            <div className="portfolio_project_ohmyfood">
+              <img src={ohMyFoodPhoto} alt="ohmyfood photo" />
+              <img src={logoOhMyFood} alt="ohmyfood logo" />
+              <a href="#" className="portfolio_project_link">Voir plus</a>
+            </div>
+            <div className="portfolio_project_sophiebluel">
+              <img src={sophieBluelPhoto} alt="Sophie Bluel photo" />
+              <img src={logoSophieBluel} alt="Sophie Bluel logo" />
+              <a href="#" className="portfolio_project_link">Voir plus</a>
+            </div>
+            <div className="portfolio_project_kasa">
+              <img src={kasaPhoto} alt="Kasa photo" />
+              <img src={logoKasa} alt="Kasa logo" />
+              <a href="#" className="portfolio_project_link">Voir plus</a>
+            </div>
+            <div className="portfolio_project_ninacarducci">
+              <img src={ninaCarducciPhoto} alt="Nina Carducci photo" />
+              <img src={logoNinaCarducci} alt="Nina Carducci logo" />
+              <a href="#" className="portfolio_project_link">Voir plus</a>
+            </div>
+            <div className="portfolio_project_argentbank">
+              <img src={argentBankPhoto} alt="ArgentBank photo" />
+              <img src={logoArgentBank} alt="Argent Bank logo" />
+              <a href="#" className="portfolio_project_link">Voir plus</a>
+            </div>
+          </section>
+        </div>
       </section>
     </div>
   );
 }
+
 
 export default Portfolio;

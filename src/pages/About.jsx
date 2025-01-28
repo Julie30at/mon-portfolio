@@ -38,8 +38,10 @@ function About() {
           <section className="about_info_presentation">
             <div className="about_info_presentation_text">
               <p>
-                <strong>Développeuse web</strong> Freelance spécialisée en 
-                <strong> <a href="#react-section">React</a></strong>, je conçois des interfaces visuelles modernes et réactives pour des applications et sites web.
+                <strong>Développeuse web</strong> Freelance spécialisée en <strong><a href="#react-section">React.</a></strong>
+              </p>
+              <p>
+                Je conçois des interfaces visuelles modernes et réactives pour des applications et sites web.
               </p>
               <p>
                 Grâce à ma formation et aux projets réalisés, j’ai acquis les compétences nécessaires pour répondre aux exigences du développement et de l’optimisation.

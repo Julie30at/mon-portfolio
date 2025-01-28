@@ -1,21 +1,24 @@
 .about {
   margin-left: 11rem; 
-  background-color: rgba(184, 203, 208, 0.50);
+  background: #070a29; 
   padding-bottom: 2.5rem;
 }
 
+
+
 .about_title {
   text-transform: uppercase;
-  text-shadow: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
   font-size: 2.25rem;
   font-style: italic;
   font-weight: 500;
   text-align: left;
-  border-bottom: 0.125rem solid #137C8B;
-  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
+  border-bottom: 0.125rem solid #5c27fe;
+  box-shadow: 0rem 0.5rem 0.75rem 0.375rem #dec7ff, 
+              0rem 0.25rem 0.25rem 0rem #dec7ff;
   padding: 1.25rem 0 0.625rem 6.25rem;
   margin-bottom: 2.5rem;
   margin-top: 0;
+  color: #dec7ff; 
 }
 
 .about_info {
@@ -27,22 +30,26 @@
 .about_info_presentation {
   display: flex;
   justify-content: space-between;
+  gap: 3rem;
+  background: radial-gradient(54.98% 34.98% at 70% 50%, #725bda 0, rgba(6, 19, 45, 0) 100%);
 }
 
 .about_info_presentation_text {
   font-size: 1.5rem;
   margin-left: 4.125rem;
+  color: #dec7ff;
   width: 50%;
 }
 
 .about_info_presentation_text a {
-  color: black;
+  color: #5c27fe;
   text-decoration: none;
+  display: inline-block;
   transition: color 0.3s ease;
 }
 
 .about_info_presentation_text a:hover {
-  color: #0a5e6f;
+  color: #dec7ff;
   text-decoration: underline;
 }
 
@@ -77,11 +84,12 @@
 }
 
 .about_info_presenation_perso {
-  background-color: #709CA7;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, .05), hsla(0, 0%, 100%, 0) 73.86%); 
   text-align: center;
+  color: #dec7ff;
   padding: 1.25rem;
   border-radius: 1.5625rem;
-  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
+  box-shadow: 0 0.5rem 0.75rem 0.375rem #dec7ff, 0 0.25rem 0.25rem #dec7ff;
   min-width: 17.5rem;
   margin-right: 3.75rem;
   max-height: 25rem;
@@ -96,13 +104,13 @@
 .about_info_seo {
   display: flex;
   flex-direction: column;
-  background-color: #709CA7;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, .05), hsla(0, 0%, 100%, 0) 73.86%); 
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 1.25rem;
   border-radius: 1.5625rem;
-  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
+  box-shadow: 0 0.5rem 0.75rem 0.375rem #dec7ff, 0 0.25rem 0.25rem #dec7ff;
   margin-right: 3.75rem;
   margin-left: 5rem;
   opacity: 0;
@@ -132,7 +140,7 @@
 .about_info_seo h2 {
   font-size: 2.125rem;
   font-weight: 600;
-  color: black;
+  color: #dec7ff;
   margin-bottom: 3.75rem;
 }
 
@@ -142,8 +150,8 @@
 }
 
 .about_info_presenation_perso li {
-  font-size: 1.25rem;
-  color: black;
+  font-size: 1.3rem;
+  color: #dec7ff;
   font-weight: 500;
   line-height: 1.875rem;
   margin-bottom: 0.5rem;
@@ -155,20 +163,21 @@
 
 .about_info_presenation_perso_CV a {
   display: inline-block;
-  background-color: #137C8B;
-  color: #fff;
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
+  color: #dec7ff;
   padding: 0.625rem 2.5rem;
   text-decoration: none;
-  border: 0.1875rem solid rgba(184, 203, 208, 0.50);
+  border: 0.1rem solid #dec7ff;
   border-radius: 1.5625rem;
   font-weight: bold;
   text-align: center;
-  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
+  box-shadow: 0rem 0.2rem 0.75rem 0.1rem #dec7ff, 
+              0rem 0.1rem 0.25rem 0rem #dec7ff;  
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .about_info_presenation_perso_CV a:hover {
-  background-color: #0a5e6f;
+  background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%);
   transform: scale(1.05);
 }
 
@@ -181,14 +190,14 @@
   width: 15.75rem;
   height: 6.8125rem;
   margin-bottom: 0.625rem;
-  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
-  border-radius: 1.5625rem;
+  box-shadow: 0rem 0.2rem 0.75rem 0.1rem #dec7ff, 
+              0rem 0.1rem 0.25rem 0rem #dec7ff;   border-radius: 1.5625rem;
 }
 
 .about_info_library p,
 .about_info_backend p,
 .about_info_seo p {
-  color: black ; 
+  color: #dec7ff ; 
   font-size: 2rem;
   width: 70%;
 }
@@ -198,8 +207,8 @@
   width: 15.75rem;
   height: 6.8125rem;
   margin-bottom: 0.625rem;
-  box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
-  border-radius: 1.5625rem;
+  box-shadow: 0rem 0.2rem 0.75rem 0.1rem #dec7ff, 
+              0rem 0.1rem 0.25rem 0rem #dec7ff;   border-radius: 1.5625rem;
 }
 
 .about_info_backend img {
@@ -207,10 +216,10 @@
 }
 
 .about_info_seo {
-  background-color: #709CA7;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, .05), hsla(0, 0%, 100%, 0) 73.86%); 
   padding: 1.25rem;
   border-radius: 0.625rem;
-  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 0.75rem 0.375rem #dec7ff, 0 0.25rem 0.25rem #dec7ff;
   flex: 1;
   min-width: 17.5rem;
 }

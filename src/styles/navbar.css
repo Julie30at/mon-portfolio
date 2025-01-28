@@ -6,29 +6,28 @@
   left: 0;
   width: 13rem;
   height: 100vh; 
-  background-color: #137C8B; 
-  border: 0.1875rem solid #B8CBD0;
-  border-top-right-radius: 2.5rem; 
-  border-bottom-right-radius: 2.5rem; 
-  box-shadow: 0rem 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 
-              0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.30);
+  background-color: #070a29; 
+  border-top-right-radius: 2.7rem; 
+  border-bottom-right-radius: 2.7rem; 
+  box-shadow: 0rem 0.5rem 0.75rem 0.375rem #dec7ff, 
+              0rem 0.25rem 0.25rem 0rem #dec7ff;
   z-index: 10;
 }
 
 .navbar_header nav {
   display: flex;
   flex-direction: column; 
-  background-color: #709CA7;
+  background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%);
   border-top-right-radius: 2.5rem; 
 }
 
 .navbar_header nav a {
-  color: black;
+  color: #fff;
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
-  border: 0.0625rem solid #B8CBD0;
+  border: 0.0625rem solid #5c27fe;
   padding: 1.25rem 1.9375rem;
   border-right: none;
   border-top: none;
@@ -36,7 +35,7 @@
 }
 
 .navbar_header nav a:hover {
-  background: rgba(184, 203, 208, 0.50);
+  background: #dec7ff;
 }
 
 .navbar_header nav a:first-child {
@@ -46,7 +45,7 @@
 .navbar_footer {
   display: flex;
   flex-direction: column; 
-  background-color: #709CA7;
+  background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%);
   margin-top: auto; 
   border-bottom-right-radius: 2.5rem;
 }
@@ -54,14 +53,15 @@
 .navbar_footer_link {
   display: flex;
   justify-content: center;
-  border: 0.0625rem solid #B8CBD0;
+  border: 0.0625rem solid #5c27fe;
+  border-right: none;
   gap: 1.25rem; 
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
 
 .navbar_footer_link a {
-  color: black;
+  color: #fff;
   transition: transform 0.3s ease;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .navbar_footer_mention {
-  color: black;
+  color: #fff;
   text-align: center;
   font-size: 1rem;
   font-weight: 500;

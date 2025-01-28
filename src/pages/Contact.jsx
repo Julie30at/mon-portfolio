@@ -115,15 +115,26 @@ function Contact() {
             </div>
             <div className="icon_container">
               <div className="contact_email">
-                <FontAwesomeIcon icon={faEnvelope} className="envelope_icon" />
+                 <a href="mailto:julie30at@gmail.com" aria-label="Envoyer un email">
+                   <FontAwesomeIcon icon={faEnvelope} className="envelope_icon" />
+                 </a>
                 <p>julie30at@gmail.com</p>
               </div>
               <div className="contact_location">
-                <FontAwesomeIcon icon={faLocationDot} className="location_icon" />
+                 <a 
+                   href="https://www.google.com/maps?q=30900+Nîmes,+France" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Voir la localisation sur Google Maps"
+                 >
+                    <FontAwesomeIcon icon={faLocationDot} className="location_icon" />
+                 </a>
                 <p>30900 Nîmes, France</p>
               </div>
               <div className="contact_phone">
-                <FontAwesomeIcon icon={faPhone} className="phone_icon" />
+                <a href="tel:+33683027939" aria-label="Appeler ce numéro">
+                    <FontAwesomeIcon icon={faPhone} className="phone_icon" />
+                </a>
                 <p>+33 6 83 02 79 39</p>
               </div>
             </div>
