@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Oh My Food",
+    "image": "ohMyFoodPhoto.webp",
+    "logo": "logoOhMyFood.webp",
+    "description": "Un projet de gestion de commandes de plats.",
+    "technologies": ["html-logo.webp", "css-logo.webp", "javascript-logo.webp"],
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "name": "Sophie Bluel",
+    "image": "sophieBluelPhoto.webp",
+    "logo": "logoSophieBluel.webp",
+    "description": "Un projet de portfolio pour Sophie Bluel.",
+    "technologies": ["react-logo.webp", "css-logo.webp", "javascript-logo.webp"],
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "name": "Kasa",
+    "image": "kasaPhoto.webp",
+    "logo": "logoKasa.webp",
+    "description": "Un projet de location d'appartements.",
+    "technologies": ["react-logo.webp", "nodejs-logo.webp", "express-logo.webp"],
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "name": "Nina Carducci",
+    "image": "ninaCarducciPhoto.webp",
+    "logo": "logoNinaCarducci.webp",
+    "description": "Le portfolio de la photographe Nina Carducci.",
+    "technologies": ["html-logo.webp", "css-logo.webp", "javascript-logo.webp", "react-logo.webp"],
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "name": "Argent Bank",
+    "image": "argentBankPhoto.webp",
+    "logo": "logoArgentBank.webp",
+    "description": "Un projet de banque en ligne.",
+    "technologies": ["react-logo.webp", "nodejs-logo.webp", "mongodb-logo.webp"],
+    "link": "#"
+  }
+]

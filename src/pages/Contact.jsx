@@ -2,7 +2,8 @@ import { useState } from "react";
 import Navbar from "../Components/Navbar";
 import '../styles/contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHandshake, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faEnvelope, faLocationDot  } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -132,10 +133,13 @@ function Contact() {
                 <p>30900 Nîmes, France</p>
               </div>
               <div className="contact_phone">
-                <a href="tel:+33683027939" aria-label="Appeler ce numéro">
-                    <FontAwesomeIcon icon={faPhone} className="phone_icon" />
+                <a href="https://www.linkedin.com/in/julie30at" target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Voir mon linkedin"
+                >
+                    <FontAwesomeIcon icon={faLinkedin} className="linkedin_icon" />
                 </a>
-                <p>+33 6 83 02 79 39</p>
+                <p>www.linkedin.com/in/julie30at</p>
               </div>
             </div>
           </form>

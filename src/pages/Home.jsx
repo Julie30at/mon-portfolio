@@ -1,5 +1,5 @@
 import Navbar from "../Components/Navbar"; 
-import julieAtPhoto from '../assets/JulieAtProfil2.webp'; 
+import julieAtPhoto from '../assets/JulieAtProfil3.webp'; 
 import '../styles/home.css'
 
 function Home() {

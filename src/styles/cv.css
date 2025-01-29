@@ -1,65 +1,111 @@
 .cv {
   margin-left: 11rem; 
-  background: #070a29; 
   padding-bottom: 2.5rem;
   height: auto;
-  min-height: 100vh; /* Assure une hauteur minimale de 100vh */
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
 .cv_title {
-   text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 2.25rem;
   font-style: italic;
   font-weight: 500;
   text-align: left;
-  border-bottom: 0.125rem solid #5c27fe;
-  box-shadow: 0rem 0.5rem 0.75rem 0.375rem #dec7ff, 
-              0rem 0.25rem 0.25rem 0rem #dec7ff;
+  border-bottom: 0.125rem solid #D38312;
+  box-shadow: 0rem 0.3rem 0.75rem 0.1rem #D38312, 
+              0rem 0.25rem 0.25rem 0rem #A83279;
   padding: 1.25rem 0 0.625rem 6.25rem;
-  margin-bottom: 2.5rem;
   margin-top: 0;
-  color: #dec7ff ;
+  color: #fff; 
 }
 
 .cv_julie {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
-    background: radial-gradient(44.98% 44.98% at 53% 50%, #725bda 0, rgba(6, 19, 45, 0) 100%);
+    padding-top: 5rem;
+    background: radial-gradient(40% 40% at 55% 50%, #A83279 0, rgba(6, 19, 45, 0) 100%);
+    animation: zoomBackground 6s infinite ease-in-out;
+    background-size: 100% 100%; 
+    background-position: center; 
+}
 
+/* Animation de zoom sur le background */
+@keyframes zoomBackground {
+    0% {
+        background-size: 100% 100%; 
+        background-position: center; 
+    }
+    50% {
+        background-size: 200% 150%; 
+        background-position: center; 
+    }
+    100% {
+        background-size: 100% 100%; 
+        background-position: center; 
+    }
 }
 
 .cv_julie img {
-    box-shadow: 0 0.5rem 0.75rem 0.375rem rgba(0, 0, 0, 0.15), 0 0.25rem 0.25rem rgba(0, 0, 0, 0.30);
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    opacity: 0; /* L'image est invisible au départ */
+    transform: rotateY(180deg); /* L'image est retournée de 180° sur l'axe Y au départ */
+    animation: flipIn 1.5s ease-out forwards; /* L'animation flipIn fait l'effet de retournement */
 }
+
+/* Animation de retournement de l'image */
+@keyframes flipIn {
+    0% {
+        opacity: 0;
+        transform: rotateY(180deg); /* L'image commence retournée */
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg); /* L'image revient à sa position normale */
+    }
+}
+
 
 .cv_button {
   background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
-  color: #dec7ff;
+  color: #fff;
   padding: 0.625rem 2.5rem;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  border: 0.1rem solid #dec7ff;
-  border-radius: 1.5625rem;
+  border-radius: 5px;
   font-weight: bold;
   text-align: center;
-  box-shadow: 0rem 0.2rem 0.75rem 0.1rem #dec7ff, 
-              0rem 0.1rem 0.25rem 0rem #dec7ff; 
+  box-shadow: 0rem 0.2rem 0.75rem 0.1rem #D38312, 
+              0rem 0.25rem 0.25rem 0rem #A83279;
   transition: transform 0.3s ease, background-color 0.3s ease;
   overflow: hidden; 
   margin-bottom: 3rem;
+  position: relative; /* Important for the pseudo-element */
+}
+
+.cv_button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transition: left 0.5s ease-in-out;
+}
+
+.cv_button:hover::after {
+  left: 150%;
 }
 
 .cv_button:hover {
-  background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%);
   transform: scale(1.05);
 }
 
 .cv_button a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
+

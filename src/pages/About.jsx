@@ -60,9 +60,8 @@ function About() {
                 <li>Julie AT</li>
                 <li>33 ans</li>
                 <li>Nîmes, France</li>
-                <li>julie30at@gmail.com</li>
-                <li>06.83.02.79.39</li>
-                <li>Certification professionnelle niveau V</li>
+                <li>Certification professionnelle</li>
+                <li>niveau V</li>
                 <li>Développeur informatique</li>
               </ul>
               <div className="about_info_presenation_perso_CV">
@@ -70,6 +69,7 @@ function About() {
               </div>
             </div>
           </section>
+          <div className="about_info_tech">
           <section className="about_info_langage">
             <h2>Langages de programmation</h2>
             <div className="about_info_langage_logo">
@@ -99,6 +99,7 @@ function About() {
             <p>Le SEO c'est l'ensemble des techniques qui permettent d'améliorer la visibilité d'un site web dans les moteurs de recherche comme Google.</p>
             <p><strong>Outils :</strong> Google Analytics, Google Search Console, GTmetrix, Lighthouse</p>
           </section>
+          </div>
         </section>
       </section>
     </div>
