@@ -4,7 +4,7 @@
   align-items: center;
   height: 100%;
   background: #070a29;
-  background: radial-gradient(34.98% 34.98% at 50% 50%, #725bda 0, rgba(6, 19, 45, 0) 100%);
+  background: radial-gradient(34.98% 44.98% at 54% 50%, #A83279 0, rgba(6, 19, 45, 0) 100%);
   text-align: center;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .loading_text_title {
-  color: #137C8B;
+  color: #D38312;
   font-family: 'Dancing Script', cursive;
   font-size: 6rem;
   font-weight: 700;
@@ -23,7 +23,7 @@
 }
 
 .loading_text_catchphrase {
-  color: #709CA7;
+  color: #D38312;
   font-family: "Dancing Script";
   font-size: 2.25rem;
   font-weight: 700;
@@ -32,7 +32,7 @@
 
 .loading_dots {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.50rem;
 }
 
 .dot {
@@ -42,11 +42,31 @@
   animation: bounce 1.5s infinite ease-in-out;
 }
 
-.dot1 { background-color: #F5F5F5; animation-delay: 0s; }
-.dot2 { background-color: #B8CBD0; animation-delay: 0.2s; }
-.dot3 { background-color: #709CA7; animation-delay: 0.4s; }
-.dot4 { background-color: #137C8B; animation-delay: 0.6s; }
-.dot5 { background-color: #F5F5F5; animation-delay: 0.8s; }
+.dot1 {
+  background-color: #f0ba09;  /* Plus clair et saturé */
+  animation-delay: 0s;
+}
+
+.dot2 {
+  background-color: #D38312;  /* Orange vif */
+  animation-delay: 0.2s;
+}
+
+.dot3 {
+  background-color: #eb4f07;  /* Orange plus foncé */
+  animation-delay: 0.4s;
+}
+
+.dot4 {
+  background-color: #d31a61;  /* Couleur principale rose */
+  animation-delay: 0.6s;
+}
+
+.dot5 {
+  background-color: #8B1A4B;  /* Rose encore plus foncé */
+  animation-delay: 0.8s;
+}
+
 
 @keyframes bounce {
   0%, 80%, 100% {
