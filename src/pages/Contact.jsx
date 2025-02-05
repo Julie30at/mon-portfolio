@@ -98,6 +98,7 @@ const handleSubmit = (e) => {
                   value={formData.name}
                   onChange={handleChange}
                   required
+                  autoComplete="name"
                 />
                 {errors.name && <div className="error">{errors.name}</div>}
               </div>
@@ -111,6 +112,7 @@ const handleSubmit = (e) => {
                   value={formData.email}
                   onChange={handleChange}
                   required
+                  autoComplete="email"
                 />
                 {errors.email && <div className="error">{errors.email}</div>}
               </div>
