@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 11rem; 
 }
 
 .project_detail_contain {
@@ -13,7 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   border-radius: 15px;
   background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
 }
@@ -70,14 +71,14 @@
 
 .project_detail_title {
   color: #D38312;
-  font-size: 2rem;
+  font-size: 1.3rem;
   text-decoration: underline;
 }
 
 .project_links {
   display: flex;
   flex-direction: row;
-  gap: 150px;
+  gap: 4rem;
 }
 
 .project_links a {
@@ -99,24 +100,26 @@
 
 .project_description {
   text-align: center;
-  padding: 2rem;
   width: 80%;
+  margin-top: 1.5rem;
 }
 
 .project_description h2 {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-family: 'Exo 2';
   color: #D38312;
 }
 
 .project_description p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1rem;
   color: #fff;
 }
 
 .project_detail_contain h3{
-    color: #D38312;
+  color: #D38312;
+  font-size: 1.2rem;
+  font-family: 'Exo 2';
 }
 
 .technologies_list {
@@ -124,7 +127,7 @@
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .technologies_list li {
@@ -132,13 +135,13 @@
 }
 
 .technologies_list li img {
-  width: 120px;
+  width: 90px;
   min-height: 40px;
   max-height: 40px;
 }
 
 .project_image {
-  width: 60%;
+  width: 70%;
   height: auto;
   border-radius: 20px;
   margin-top: 2rem;
