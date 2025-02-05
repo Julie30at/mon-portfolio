@@ -8,16 +8,16 @@
 
 .contact_title {
   text-transform: uppercase;
+  font-family: 'Exo 2';
   font-size: 2.25rem;
   font-style: italic;
   font-weight: 500;
   text-align: left;
   border-bottom: 0.125rem solid #D38312;
-  box-shadow: 0rem 0.3rem 0.75rem 0.1rem #D38312, 
-              0rem 0.25rem 0.25rem 0rem #A83279;
   padding: 1.25rem 0 0.625rem 6.25rem;
   margin-top: 0;
   color: #fff; 
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
 }
 
 .contact_form {
@@ -30,6 +30,8 @@
   animation: zoomBackground 6s infinite ease-in-out;
   background-size: 100% 100%; 
   background-position: center; 
+  font-family: 'Exo 2';
+  font-size: 1.4rem;
   color: #D38312;
 }
 
@@ -58,6 +60,17 @@
   margin-top: 5rem;
 }
 
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form_group label {
+  color: #fff;
+  font-family: 'Montserrat';
+}
+
 .form_group_row {
   display: flex;
   justify-content: center;
@@ -71,12 +84,11 @@
 }
 
 .form_group textarea {
-  width: 30rem;
+  width: 45rem;
 }
 
 .form_group input,
 textarea {
-  border-radius: 10px;
   background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
   font-family: 'montserrat';
   border: none;
@@ -85,7 +97,7 @@ textarea {
   color: #fff;
   padding: 1.3rem;
   width: 23.625rem;
-  box-shadow: 0 0.2rem 0.75rem 0.2rem #D38312, 0 0.2rem 0.25rem #A83279;
+  border-radius: 20px;
 }
 
 .form_group input::placeholder,
@@ -99,20 +111,19 @@ textarea::placeholder {
 button {
   background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
   color: #fff;
-  padding: 0.625rem 2.5rem;
+  padding: 0.5rem 2rem;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  border-radius: 5px;
   font-weight: bold;
   text-align: center;
-  box-shadow: 0rem 0.2rem 0.75rem 0.1rem #D38312, 
-              0rem 0.25rem 0.25rem 0rem #A83279;
   transition: transform 0.3s ease, background-color 0.3s ease;
   overflow: hidden; 
   margin-bottom: 3rem;
   position: relative; 
-  border: none;
+  border: 1px solid #A83279; 
+  outline: 2px solid #D38312; 
+  outline-offset: 4px; 
 }
 
 button::after {
@@ -136,8 +147,15 @@ button:hover {
 
 .error {
   color: red;
+  font-weight: bold;
   font-size: 0.875rem;
   margin-top: 0.5rem;
+}
+
+.success {
+  color: #D38312;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .icon_container {

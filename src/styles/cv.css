@@ -8,16 +8,16 @@
 
 .cv_title {
   text-transform: uppercase;
+  font-family: 'Exo 2';
   font-size: 2.25rem;
   font-style: italic;
   font-weight: 500;
   text-align: left;
   border-bottom: 0.125rem solid #D38312;
-  box-shadow: 0rem 0.3rem 0.75rem 0.1rem #D38312, 
-              0rem 0.25rem 0.25rem 0rem #A83279;
   padding: 1.25rem 0 0.625rem 6.25rem;
   margin-top: 0;
   color: #fff; 
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
 }
 
 .cv_julie {
@@ -70,19 +70,19 @@
 .cv_button {
   background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
   color: #fff;
-  padding: 0.625rem 2.5rem;
+  padding: 0.5rem 2rem;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  border-radius: 5px;
   font-weight: bold;
   text-align: center;
-  box-shadow: 0rem 0.2rem 0.75rem 0.1rem #D38312, 
-              0rem 0.25rem 0.25rem 0rem #A83279;
+  border: 1px solid #A83279; 
+  outline: 2px solid #D38312; 
+  outline-offset: 4px; 
   transition: transform 0.3s ease, background-color 0.3s ease;
   overflow: hidden; 
   margin-bottom: 3rem;
-  position: relative; /* Important for the pseudo-element */
+  position: relative; 
 }
 
 .cv_button::after {
@@ -109,3 +109,6 @@
   color: #fff;
 }
 
+.pdf_icon {
+  margin-top: 1rem;
+}

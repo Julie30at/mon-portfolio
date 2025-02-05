@@ -4,17 +4,17 @@
 
 .portfolio_title {
   text-transform: uppercase;
+  font-family: 'Exo 2';
   font-size: 2.25rem;
   font-style: italic;
   font-weight: 500;
   text-align: left;
   border-bottom: 0.125rem solid #D38312;
-  box-shadow: 0rem 0.3rem 0.75rem 0.1rem #D38312, 
-              0rem 0.25rem 0.25rem 0rem #A83279;
   padding: 1.25rem 0 0.625rem 6.25rem;
   margin-bottom: 2.5rem;
   margin-top: 0;
   color: #fff; 
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
 }
 
 .portfolioProject {
@@ -39,9 +39,9 @@
   }
 }
 
-
 .portfilio_title_project {
   display: flex;
+  font-family: 'Exo 2';
   font-size: 2.125rem;
   font-weight: 600;
   color: #D38312;
@@ -61,10 +61,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: radial-gradient(44.98% 24.98% at 95% 5%, #D38312 0, rgba(6, 19, 45, 0) 100%);
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
   padding: 3rem;
-  border-radius: 10%;
-  box-shadow: 0 0.2rem 0.75rem 0.375rem #D38312, 0 0.2rem 0.25rem #A83279;
   opacity: 0; 
   animation: fadeInUp 0.8s ease-in-out forwards;
 }
@@ -125,6 +123,12 @@
   transform: scale(1);
 }
 
+.portfolio_project_name {
+  color: #D38312;
+  font-family: 'Exo 2';
+  font-size: 1.8rem;
+}
+
 .portfolio_project_link {
   font-size: 1rem;
   font-weight: 600;
@@ -140,4 +144,3 @@
   color: #D38312;
   transform: scale(1.1);
 }
-

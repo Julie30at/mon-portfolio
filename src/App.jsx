@@ -6,6 +6,7 @@ import Portfolio from './pages/Portfolio';
 import Cv from './pages/Cv';
 import Contact from './pages/Contact';
 import Loading from './pages/Loading';
+import ProjectDetail from './pages/ProjectDetail';
 
 function App() {
   const [isLoading, setIsLoading] = useState(() => {
@@ -17,7 +18,7 @@ function App() {
       const timer = setTimeout(() => {
         setIsLoading(false);
         sessionStorage.setItem('hasVisited', 'true');
-      }, 3000);
+      }, 4500);
   
       return () => clearTimeout(timer);
     }
@@ -33,6 +34,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
           <Route path="/cv" element={<Cv />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Home />} />

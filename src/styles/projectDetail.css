@@ -1,0 +1,146 @@
+.project_detail {
+  background: #070A29;
+  color: #fff;
+  padding: 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project_detail_contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 15px;
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
+}
+
+.back_button {
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
+  color: #fff;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  position: relative;
+  border: 1px solid #A83279;
+  outline: 2px solid #D38312;
+  outline-offset: 4px;
+}
+
+.back_button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transition: left 0.5s ease-in-out;
+}
+
+.back_button:hover::after {
+  left: 150%;
+}
+
+.back_button:hover {
+  transform: scale(1.05);
+}
+
+.project_detail_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  width: 40%;
+  font-family: 'Exo 2';
+  font-weight: 500;
+  margin-top: 0;
+  padding: 1.5rem;
+}
+
+.project_detail_title {
+  color: #D38312;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.project_links {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+
+.project_links a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, text-decoration 0.3s ease;
+}
+
+.project_links a:hover {
+  text-decoration: underline;
+  color: #D38312;
+  transform: scale(1.2);
+}
+
+.project_description {
+  text-align: center;
+  padding: 2rem;
+  width: 80%;
+}
+
+.project_description h2 {
+  font-size: 1.8rem;
+  font-family: 'Exo 2';
+  color: #D38312;
+}
+
+.project_description p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.project_detail_contain h3{
+    color: #D38312;
+}
+
+.technologies_list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.technologies_list li {
+  list-style: none;
+}
+
+.technologies_list li img {
+  width: 120px;
+  min-height: 40px;
+  max-height: 40px;
+}
+
+.project_image {
+  width: 60%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 2rem;
+  object-fit: contain;
+}

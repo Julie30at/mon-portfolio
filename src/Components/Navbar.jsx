@@ -34,7 +34,7 @@ function Navbar() {
                     </a>
                 </div>
                 <div className="navbar_footer_mention">
-                    <p>© 2025 Julie AT.</p>
+                    <p>© 2025 Julie AT</p>
                     <p>Tous droits réservés</p>
                 </div>
             </footer>

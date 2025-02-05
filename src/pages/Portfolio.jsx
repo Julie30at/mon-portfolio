@@ -1,56 +1,44 @@
+import { Link } from "react-router-dom";
 import Navbar from "../Components/Navbar";
-import '../styles/portfolio.css';
-import ohMyFoodPhoto from '../assets/ohMyFoodPhoto.webp';
-import logoOhMyFood from '../assets/logoOhMyFood.webp';
-import sophieBluelPhoto from '../assets/SophieBluelPhoto.webp';
-import logoSophieBluel from '../assets/logoSophieBluel.webp';
-import kasaPhoto from '../assets/KasaPhoto.webp';
-import logoKasa from '../assets/logoKasa.webp';
-import ninaCarducciPhoto from '../assets/NinaCarducciPhoto.webp';
-import logoNinaCarducci from '../assets/logoNinaCarducci.webp';
-import argentBankPhoto from '../assets/argentBankPhoto.webp';
-import logoArgentBank from '../assets/logoArgentBank.webp';
+import "../styles/portfolio.css";
+import projectsData from "../data/projects.json";
+import ohMyFoodPhoto from "../assets/ohMyFoodPhoto.webp";
+import sophieBluelPhoto from "../assets/SophieBluelPhoto.webp";
+import kasaPhoto from "../assets/KasaPhoto.webp";
+import ninaCarducciPhoto from "../assets/NinaCarducciPhoto.webp";
+import argentBankPhoto from "../assets/argentBankPhoto.webp";
 
 function Portfolio() {
+  const projectImages = {
+    1: ohMyFoodPhoto,
+    2: sophieBluelPhoto,
+    3: kasaPhoto,
+    4: ninaCarducciPhoto,
+    5: argentBankPhoto,
+  };
+
   return (
     <div>
-      <Navbar /> 
+      <Navbar />
       <section className="portfolio">
-        <h1 className="portfolio_title">portfolio</h1>
+        <h1 className="portfolio_title">Portfolio</h1>
         <div className="portfolioProject">
-          <h2 className="portfilio_title_project">Focus projets de formation.</h2>
+          <h2 className="portfolio_title_project">Focus projets de formation</h2>
           <section className="portfolio_project">
-            <div className="portfolio_project_ohmyfood">
-              <img src={ohMyFoodPhoto} alt="ohmyfood photo" />
-              <img src={logoOhMyFood} alt="ohmyfood logo" />
-              <a href="#" className="portfolio_project_link">Voir plus</a>
-            </div>
-            <div className="portfolio_project_sophiebluel">
-              <img src={sophieBluelPhoto} alt="Sophie Bluel photo" />
-              <img src={logoSophieBluel} alt="Sophie Bluel logo" />
-              <a href="#" className="portfolio_project_link">Voir plus</a>
-            </div>
-            <div className="portfolio_project_kasa">
-              <img src={kasaPhoto} alt="Kasa photo" />
-              <img src={logoKasa} alt="Kasa logo" />
-              <a href="#" className="portfolio_project_link">Voir plus</a>
-            </div>
-            <div className="portfolio_project_ninacarducci">
-              <img src={ninaCarducciPhoto} alt="Nina Carducci photo" />
-              <img src={logoNinaCarducci} alt="Nina Carducci logo" />
-              <a href="#" className="portfolio_project_link">Voir plus</a>
-            </div>
-            <div className="portfolio_project_argentbank">
-              <img src={argentBankPhoto} alt="ArgentBank photo" />
-              <img src={logoArgentBank} alt="Argent Bank logo" />
-              <a href="#" className="portfolio_project_link">Voir plus</a>
-            </div>
+            {projectsData.map((project) => (
+              <div key={project.id} className="portfolio_project_item">
+                <img src={projectImages[project.id]} alt={`${project.name} photo`} />
+                <h3 className="portfolio_project_name">{project.name}</h3>
+                <Link to={`/project/${project.id}`} className="portfolio_project_link">
+                  Voir plus
+                </Link>
+              </div>
+            ))}
           </section>
         </div>
       </section>
     </div>
   );
 }
-
 
 export default Portfolio;

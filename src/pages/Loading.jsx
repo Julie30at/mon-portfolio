@@ -1,10 +1,12 @@
-import '../styles/loading.css'
+import '../styles/loading.css';
+import julieAtPhoto from '../assets/webaju__5.png'; 
+
 
 function Loading() {
   return (
     <div className="loading">
-     <section className="loading_Text">
-      <h1 className="loading_text_title">Julie AT</h1>
+     <section className="loading_Text" role='main'>
+      <img src={julieAtPhoto} alt="Logo de Webaju" className="loading_photo" />
       <div className="loading_dots">
           <span className="dot dot1"></span>
           <span className="dot dot2"></span>
@@ -12,7 +14,7 @@ function Loading() {
           <span className="dot dot4"></span>
           <span className="dot dot5"></span>
       </div>
-      <p className="loading_text_catchphrase">Transformer les idées en réalité numérique...</p>
+      <h1 className="loading_text_catchphrase">Transformer les idées en réalité numérique...</h1>
      </section>
     </div>
   );

@@ -6,33 +6,29 @@
   left: 0;
   width: 13rem;
   height: 100vh; 
-  background-color: #070a29; 
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
   border-top-right-radius: 2.7rem; 
-  border-bottom-right-radius: 2.7rem; 
-  box-shadow: 0rem 0.5rem 0.75rem 0.375rem #D38312, 
-              0rem 0.25rem 0.25rem 0rem #A83279;
+  border-right: 0.15rem solid #D38312;
   z-index: 10;
 }
 
 .navbar_header nav {
   display: flex;
   flex-direction: column; 
-  background: linear-gradient(264.28deg, #D38312 -38.2%, #A83279 103.12%);
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #A83279 103.12%);
   border-top-right-radius: 2.5rem; 
 }
 
 .navbar_header nav a {
   position: relative;
   color: #fff;
+  font-family: 'Exo 2';
   font-weight: bold;
   font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
-  border: 0.0625rem solid #A83279;
+  border-bottom: 0.0625rem solid #D38312;
   padding: 1.25rem 1.9375rem;
-  border-right: none;
-  border-top: none;
-  border-left: none;
   overflow: hidden;
 }
 
@@ -58,15 +54,14 @@
 .navbar_footer {
   display: flex;
   flex-direction: column; 
-  background: linear-gradient(264.28deg, #D38312 -38.2%, #A83279 103.12%);
+  background: linear-gradient(264.28deg, #512f80 -38.2%, #A83279 103.12%);
   margin-top: auto; 
-  border-bottom-right-radius: 2.5rem;
 }
 
 .navbar_footer_link {
   display: flex;
   justify-content: center;
-  border: 0.0625rem solid #A83279;
+  border: 0.0625rem solid #D38312;
   border-right: none;
   border-left: none;
   gap: 1.25rem; 
@@ -85,6 +80,7 @@
 
 .navbar_footer_mention {
   color: #fff;
+  font-family: 'Exo 2';
   text-align: center;
   font-size: 1rem;
   font-weight: 500;

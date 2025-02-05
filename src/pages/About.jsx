@@ -8,6 +8,9 @@ import sassCssLogo from "../assets/logoSassCSS.webp";
 import reactLogo from "../assets/logoREACT.webp";
 import nodeLogo from "../assets/logoNodejsexpress.webp";
 import mongoLogo from "../assets/logoMongoDB.webp";
+import figmaLogo from "../assets/logoFigma.webp";
+import postmanLogo from "../assets/logoPostman.webp";
+import trelloLogo from "../assets/logoTrello.webp";
 
 function About() {
   useEffect(() => {
@@ -33,12 +36,14 @@ function About() {
     <div>
       <Navbar />
       <section className="about">
-        <h1 className="about_title">à propos de moi</h1>
+        <h1 className="about_title">à propos</h1>
         <section className="about_info">
           <section className="about_info_presentation">
-            <div className="about_info_presentation_text">
+             <div className="about_info_background"></div>
+             <div className="about_info_presentation_introduction">
+              <div className="about_info_presentation_text">
               <p>
-                <strong>Développeuse web</strong> Freelance spécialisée en <strong><a href="#react-section">React.</a></strong>
+                Je suis <strong>Développeuse web</strong> Freelance spécialisée en <strong><a href="#react-section">React.</a></strong>
               </p>
               <p>
                 Je conçois des interfaces visuelles modernes et réactives pour des applications et sites web.
@@ -47,14 +52,14 @@ function About() {
                 Grâce à ma formation et aux projets réalisés, j’ai acquis les compétences nécessaires pour répondre aux exigences du développement et de l’optimisation.
               </p>
               <p>
-                Motivée et déterminée, j’ai à cœur de relever de nouveaux défis et de continuer à évoluer afin d'apporter des solutions adaptées aux besoins de chaque projet.
+                Motivée et déterminée, j’ai à cœur de relever des nouveaux défis et de continuer à évoluer afin d'apporter des solutions adaptées aux besoins de chaque projet.
               </p>
               <p>
                 Je propose mes services pour la <strong>création de sites web</strong>, en mettant l’accent sur des aspects essentiels tels que le 
                 <strong> <a href="#seo-section">SEO</a></strong> et la gestion de projet, afin d’assurer des solutions performantes et optimisées.
               </p>
-            </div>
-            <div className="about_info_presenation_perso">
+              </div>
+              <div className="about_info_presenation_perso">
               <h2>Informations personnelles</h2>
               <ul>
                 <li>Julie AT</li>
@@ -63,10 +68,11 @@ function About() {
                 <li>Certification professionnelle</li>
                 <li>niveau V</li>
                 <li>Développeur informatique</li>
-              </ul>
-              <div className="about_info_presenation_perso_CV">
+               </ul>
+               <div className="about_info_presenation_perso_CV">
                 <NavLink to="/cv">CV</NavLink>
               </div>
+            </div>
             </div>
           </section>
           <div className="about_info_tech">
@@ -97,7 +103,15 @@ function About() {
           <section id="seo-section" className="about_info_seo">
             <h2>SEO</h2>
             <p>Le SEO c'est l'ensemble des techniques qui permettent d'améliorer la visibilité d'un site web dans les moteurs de recherche comme Google.</p>
-            <p><strong>Outils :</strong> Google Analytics, Google Search Console, GTmetrix, Lighthouse</p>
+            <p><strong>Outils :</strong> Google Analytics, Google Search Console, GTmetrix, Lighthouse, Wave.</p>
+          </section>
+          <section className="about_info_other">
+            <h2>AUTRES</h2>
+            <div className="about_info_other_logo">
+              <img src={figmaLogo} alt="logo Figma" />
+              <img src={postmanLogo} alt="logo Postman" />
+              <img src={trelloLogo} alt="logo Trello" />
+            </div>
           </section>
           </div>
         </section>
