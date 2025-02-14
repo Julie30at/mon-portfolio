@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redirection...</title>
     <script>
-      // Vérifie si le chemin commence par '/mon-portfolio', sinon redirige vers celui-ci
       const redirectPath = window.location.pathname;
-      if (!redirectPath.startsWith('/mon-portfolio/')) {
-        // Si ce n'est pas le cas, redirige vers la racine du projet
-        window.location.replace('/mon-portfolio');
-      } else {
-        // Sinon, redirige vers le chemin demandé sous '/mon-portfolio'
+
+      // Si le chemin ne commence pas déjà par "/mon-portfolio", redirige vers celui-ci
+      if (!redirectPath.startsWith('/mon-portfolio')) {
         window.location.replace('/mon-portfolio' + redirectPath);
       }
     </script>
