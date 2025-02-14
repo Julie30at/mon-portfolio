@@ -1,43 +1,31 @@
-/* Styles généraux pour .home */
 .home_page {
   height: 100vh;
 }
 
 .home {
-  position: relative; 
+  position: relative;
   width: 100%;
-  height: 100%; 
+  height: 100vh; 
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
+  background-attachment: fixed;
+  background-image: url('../assets/homePageBackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Fond de la section home */
-.home::before {
-  content: ""; 
-  position: absolute; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/homePageBackground4.webp'); 
-  background-size: cover; 
-  background-position: center; 
-  z-index: -1; 
-}
 
-/* Styles pour l'image de profil */
 .home_photo {
   width: 20rem; 
   height: 20rem;
   object-fit: cover; 
   margin-top: 10rem;
   margin-bottom: 1.25rem; 
-
 }
 
-/* Styles pour le texte dans le paragraphe */
 .home h2 {
   font-family: 'Exo 2';
   font-size: 2.5rem; 
@@ -48,7 +36,6 @@
   align-items: center; 
 }
 
-/* Styles pour le texte statique (Julie AT) dans le h1 */
 .home h1.static-text {
   font-family: 'Exo 2';
   font-size: 2.5rem; 
@@ -60,7 +47,6 @@
   margin-bottom: 0rem;
 }
 
-/* Styles pour le texte dynamique (Développeuse Web Freelance) */
 .dynamic-text {
   overflow: hidden; 
   white-space: nowrap; 
@@ -75,7 +61,6 @@
   font-weight: bold; 
 }
 
-/* Définition de l'animation de frappe et de désécriture */
 @keyframes typing {
   0% {
     width: 0; 
@@ -89,4 +74,30 @@
   100% {
     width: 0; 
   }
+}
+
+@media (max-width: 1024px) { 
+
+.home_photo {
+  width: 15rem; 
+  height: 15rem;
+}
+}
+
+@media (max-width: 768px){ 
+
+.home_photo {
+  width: 10rem; 
+  height: 10rem;
+  margin-top: 10rem;
+}
+
+.home h2 {
+  font-size: 0.875rem; 
+}
+
+.home h1.static-text {
+  font-size: 2rem; 
+}
+
 }

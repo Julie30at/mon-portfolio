@@ -39,7 +39,7 @@
   }
 }
 
-.portfilio_title_project {
+.portfolio_title_project {
   display: flex;
   font-family: 'Exo 2';
   font-size: 2.125rem;
@@ -54,7 +54,9 @@
   grid-template-columns: repeat(2, 1fr); 
   grid-gap: 5rem;
   justify-content: center;
-  margin: 25px;
+  margin-top: 25px;
+  margin-left: 20%;
+  margin-right: 15%;
 }
 
 .portfolio_project > div {
@@ -64,6 +66,7 @@
   background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
   padding: 3rem;
   opacity: 0; 
+  border-radius: 10px;
   animation: fadeInUp 0.8s ease-in-out forwards;
 }
 
@@ -100,8 +103,8 @@
 }
 
 .portfolio_project > div img {
-  width: 20rem;
-  height: 20rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 50%; 
   object-fit: cover;
   margin-bottom: 0.625rem;
@@ -143,4 +146,77 @@
 .portfolio_project_link:hover {
   color: #D38312;
   transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+.portfolio {
+  margin-left: 0;
+  margin-top: 60px;
+}
+
+.portfolio_title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 1rem 0rem;
+  margin-bottom: 10px;
+}
+
+.portfolioProject{
+  background: radial-gradient(64.98% 24.98% at 90% 90%, #A83279 0, rgba(6, 19, 45, 0) 100%);
+}
+
+.portfolio_title_project{
+  font-size: 1.7rem;
+}
+
+.portfolio_project > div img{
+  width: 12rem;
+  height: 12rem;
+}
+
+.portfolio_project_name {
+  font-size: 1.3rem;
+}
+
+.portfolio_project_link {
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 768px) {
+.portfolio_title {
+  font-size: 1.5rem;
+}
+
+.portfolio_title_project{
+  font-size: 1.2rem;
+}
+
+.portfolio_project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  gap: 2rem;
+  width: 70%;
+}
+
+.portfolio_project > div {
+  width: 90%;
+}
+
+.portfolio_project > div img{
+  width: 10rem;
+  height: 10rem;
+}
+
+.portfolio_project_name {
+  font-size: 1rem;
+}
+
+.portfolio_project_link {
+  font-size: 0.80rem;
+}
 }

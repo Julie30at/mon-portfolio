@@ -58,7 +58,6 @@
 
 .project_detail_title {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -67,9 +66,6 @@
   font-weight: 500;
   margin-top: 0;
   padding: 1.5rem;
-}
-
-.project_detail_title {
   color: #D38312;
   font-size: 1.3rem;
   text-decoration: underline;
@@ -116,7 +112,7 @@
   color: #fff;
 }
 
-.project_detail_contain h3{
+.project_detail_contain h3 {
   color: #D38312;
   font-size: 1.2rem;
   font-family: 'Exo 2';
@@ -126,8 +122,9 @@
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row; 
   margin-top: 1rem;
+  padding: 0px;
 }
 
 .technologies_list li {
@@ -146,4 +143,113 @@
   border-radius: 20px;
   margin-top: 2rem;
   object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .project_detail {
+    margin-left: 0px;
+    margin-top: 60px;
+    padding: 0;
+  } 
+
+  .project_detail_contain {
+    width: 80%;
+  }
+
+  .back_button {
+    padding: 0.1rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.9rem;
+  }
+
+  .project_detail_title {
+    font-size: 1rem;
+    padding: 0.3rem;
+    width: 100%;
+  }
+  
+  .project_links a {
+    font-size: 0.85rem;
+  }
+
+  .project_links a svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .project_description {
+    margin-top: 0.85rem;
+  }
+
+  .project_description h2  {
+    font-size: 1rem;
+  }
+
+  .project_description p{
+    font-size: 0.85rem;
+  }
+
+  .project_detail_contain h3 {
+    font-size: 1rem;
+  }
+
+  .technologies_list{
+    flex-wrap: wrap;
+  }
+
+  .technologies_list li img {
+    width: 60px;
+    min-height: 30px;
+    max-height: 30px;
+  }
+
+  .project_image{
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .project_detail_contain {
+    width: 90%;
+  }
+
+  .project_detail_title {
+    font-size: 0.80rem;
+  }
+  
+  .project_links a {
+    font-size: 0.75rem;
+  }
+
+  .project_links a svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .project_description {
+    margin-top: 0.7rem;
+  }
+
+  .project_description h2  {
+    font-size: 0.85rem;
+  }
+
+  .project_description p{
+    font-size: 0.75rem;
+  }
+
+  .project_detail_contain h3 {
+    font-size: 0.85rem;
+  }
+
+  .technologies_list li img {
+    width: 45px;
+    min-height: 20px;
+    max-height: 20px;
+  }
+
+  .project_image{
+    width: 95%;
+  }
 }

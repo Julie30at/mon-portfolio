@@ -2,7 +2,6 @@
   margin-left: 11rem; 
   padding-bottom: 2.5rem;
   height: auto;
-  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -49,23 +48,22 @@
 
 .cv_julie img {
     margin-bottom: 4rem;
-    opacity: 0; /* L'image est invisible au départ */
-    transform: rotateY(180deg); /* L'image est retournée de 180° sur l'axe Y au départ */
-    animation: flipIn 1.5s ease-out forwards; /* L'animation flipIn fait l'effet de retournement */
+    opacity: 0; 
+    transform: rotateY(180deg); 
+    animation: flipIn 1.5s ease-out forwards; 
 }
 
 /* Animation de retournement de l'image */
 @keyframes flipIn {
     0% {
         opacity: 0;
-        transform: rotateY(180deg); /* L'image commence retournée */
+        transform: rotateY(180deg); 
     }
     100% {
         opacity: 1;
-        transform: rotateY(0deg); /* L'image revient à sa position normale */
+        transform: rotateY(0deg); 
     }
 }
-
 
 .cv_button {
   background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
@@ -111,4 +109,49 @@
 
 .pdf_icon {
   margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .cv {
+    margin-left: 0;
+    margin-top: 60px;
+    padding-bottom: 1rem;
+  }
+
+  .cv_title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+  }
+
+  .cv_julie img {
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  .cv_button {
+    padding: 0.3rem 0.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .cv_button a {
+    font-size: 0.90rem;
+  }
+}
+
+@media (max-width : 768px) {
+
+  .cv_title {
+    font-size: 1.5rem;
+  }
+
+  .cv_julie {
+    padding-top: 2rem;
+    background: radial-gradient(50% 50% at 50% 45%, #A83279 0, rgba(6, 19, 45, 0) 100%);
+  }
+
+  .cv_button a {
+    font-size: 0.60rem;
+  }
 }

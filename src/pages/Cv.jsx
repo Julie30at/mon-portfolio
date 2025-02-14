@@ -11,7 +11,7 @@ function Cv() {
       <section className="cv">
         <h1 className="cv_title">cv</h1>
         <div className="cv_julie">
-          <img src={cv} alt="CV Julie AT"></img>
+          <img src={cv} alt="Julie AT, Développeuse Web - Curriculum Vitae"></img>
             <div className="cv_button">
               <a href={cvPDF} 
                  target="_blank" 

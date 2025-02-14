@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandshake, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import emailjs from 'emailjs-com';
+import { emailJsConfig } from '../config/globalConfig';
+
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -63,7 +65,7 @@ const handleSubmit = (e) => {
       message: formData.message,
     };
 
-    emailjs.send('service_ioay27t', 'template_vua53xk', templateParams, 'ttBaf1O_-StUU_Gm2')
+    emailjs.send(emailJsConfig.serviceId, emailJsConfig.templateId, templateParams, emailJsConfig.options)
       .then((result) => {
         console.log('Message envoyé avec succès : ', result.text);
         setSuccessMessage("Votre message a été envoyé avec succès !");
@@ -87,7 +89,8 @@ const handleSubmit = (e) => {
         <h1 className="contact_title">Contact</h1>
         <section className="contact_form">
           <h2 className="contact_form_title">Parlons de votre projet !</h2>
-          <form id="contactForm" onSubmit={handleSubmit}>
+          <form id="contactForm" onSubmit={handleSubmit} action="/send-message" method="POST">
+            <div className="contact_form_responsive">
             <div className="form_group_row">
               <div className="form_group">
                 <label htmlFor="name">Nom :</label>
@@ -99,6 +102,7 @@ const handleSubmit = (e) => {
                   onChange={handleChange}
                   required
                   autoComplete="name"
+                  aria-label="Nom"
                 />
                 {errors.name && <div className="error">{errors.name}</div>}
               </div>
@@ -113,6 +117,7 @@ const handleSubmit = (e) => {
                   onChange={handleChange}
                   required
                   autoComplete="email"
+                  aria-label="Email"
                 />
                 {errors.email && <div className="error">{errors.email}</div>}
               </div>
@@ -127,21 +132,22 @@ const handleSubmit = (e) => {
                 onChange={handleChange}
                 rows="5"
                 required
+                aria-label="Message"
               />
               {errors.message && <div className="error">{errors.message}</div>}
             </div>
-
-            <button type="submit">Envoyer</button>
+            </div>
+            <button type="submit" aria-label="Envoyer le message">Envoyer</button>
 
             {successMessage && <div className="success">{successMessage}</div>}
 
             <div className="icon_container">
-              <FontAwesomeIcon icon={faHandshake} className="handshake_icon" />
+              <FontAwesomeIcon icon={faHandshake} className="handshake_icon" aria-label="Icône de contact" />
             </div>
             <div className="icon_container">
               <div className="contact_email">
                 <a href="mailto:webajuwebsitecreation@gmail.com" aria-label="Envoyer un email">
-                  <FontAwesomeIcon icon={faEnvelope} className="envelope_icon" />
+                  <FontAwesomeIcon icon={faEnvelope} className="envelope_icon" aria-label="Icône email" />
                 </a>
                 <p>webajuwebsitecreation@gmail.com</p>
               </div>
@@ -152,7 +158,7 @@ const handleSubmit = (e) => {
                   rel="noopener noreferrer"
                   aria-label="Voir la localisation sur Google Maps"
                 >
-                  <FontAwesomeIcon icon={faLocationDot} className="location_icon" />
+                  <FontAwesomeIcon icon={faLocationDot} className="location_icon" aria-label="Icône de localisation" />
                 </a>
                 <p>30900 Nîmes, France</p>
               </div>
@@ -161,7 +167,7 @@ const handleSubmit = (e) => {
                    rel="noopener noreferrer"
                    aria-label="Voir mon linkedin"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} className="linkedin_icon" />
+                  <FontAwesomeIcon icon={faLinkedin} className="linkedin_icon" aria-label="Icône Linkedin" />
                 </a>
                 <p>www.linkedin.com/in/julie30at</p>
               </div>
