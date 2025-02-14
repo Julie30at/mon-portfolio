@@ -47,27 +47,27 @@
 }
 
 .dot1 {
-  background-color: #f0ba09;  /* Plus clair et saturé */
+  background-color: #f0ba09;  
   animation-delay: 0s;
 }
 
 .dot2 {
-  background-color: #D38312;  /* Orange vif */
+  background-color: #D38312;  
   animation-delay: 0.2s;
 }
 
 .dot3 {
-  background-color: #eb4f07;  /* Orange plus foncé */
+  background-color: #eb4f07;  
   animation-delay: 0.4s;
 }
 
 .dot4 {
-  background-color: #d31a61;  /* Couleur principale rose */
+  background-color: #d31a61;  
   animation-delay: 0.6s;
 }
 
 .dot5 {
-  background-color: #8B1A4B;  /* Rose encore plus foncé */
+  background-color: #8B1A4B; 
   animation-delay: 0.8s;
 }
 
@@ -80,5 +80,27 @@
   40% {
     transform: scale(1.5);
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px){
+  .loading_photo {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 4rem;
+  }
+
+  .loading_text_catchphrase{
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
+
+  .loading_dots {
+    gap: 0.8rem;
+  }
+
+  .dot{
+    width: 1rem;
+    height: 1rem;
   }
 }
