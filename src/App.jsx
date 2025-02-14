@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/mon-portfolio">
       {isLoading ? (
         <Loading />
       ) : (
