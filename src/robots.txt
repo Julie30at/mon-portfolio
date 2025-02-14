@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.monsite.com/sitemap.xml
+Sitemap: https://julie30at.github.io/mon-portfolio/sitemap.xml
