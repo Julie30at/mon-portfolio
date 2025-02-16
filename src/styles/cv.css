@@ -12,11 +12,14 @@
   font-style: italic;
   font-weight: 500;
   text-align: left;
-  border-bottom: 0.125rem solid #D38312;
+  border: 0.125rem solid #D38312;
   padding: 1.25rem 0 0.625rem 6.25rem;
   margin-top: 0;
   color: #fff; 
-  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
+  background-image: url('../assets/homePageBackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .cv_julie {
@@ -114,7 +117,6 @@
 @media (max-width: 1024px) {
   .cv {
     margin-left: 0;
-    margin-top: 60px;
     padding-bottom: 1rem;
   }
 
@@ -122,7 +124,13 @@
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    padding: 1rem 0rem;
+    padding: 2rem;
+    padding-top: 90px;
+  }
+
+  .cv_julie {
+    background: radial-gradient(50% 50% at 50% 50%, #A83279 0, rgba(6, 19, 45, 0) 100%);
+    animation: zoomBackground 4s infinite ease-in-out;
   }
 
   .cv_julie img {
@@ -132,7 +140,7 @@
 
   .cv_button {
     padding: 0.3rem 0.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 
   .cv_button a {

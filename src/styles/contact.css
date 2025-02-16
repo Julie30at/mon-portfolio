@@ -13,11 +13,14 @@
   font-style: italic;
   font-weight: 500;
   text-align: left;
-  border-bottom: 0.125rem solid #D38312;
+  border: 0.125rem solid #D38312;
   padding: 1.25rem 0 0.625rem 6.25rem;
   margin-top: 0;
   color: #fff; 
-  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
+  background-image: url('../assets/homePageBackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .contact_form {
@@ -182,19 +185,20 @@ a {
 @media (max-width: 1024px) {
   .contact {
     margin-left: 0;
-    margin-top: 60px;
   } 
   
   .contact_title {
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    padding: 1rem 0rem;
+    padding: 2rem;
+    padding-top: 90px;
   }
 
   .contact_form{
     font-size: 1.2rem;
-    background: radial-gradient(34.98% 14.98% at 50% 25%, #A83279 0, rgba(6, 19, 45, 0) 100%);
+    background: radial-gradient(34.98% 14.98% at 50% 40%, #A83279 0, rgba(6, 19, 45, 0) 100%);
+    animation: zoomBackground 4s infinite ease-in-out;
     gap: 0;
   }
 
@@ -278,7 +282,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 0;
     width: 100%;
   }
 
@@ -289,7 +293,7 @@ a {
   .form_group_row {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 0;
     min-width: 80%;
   }
 

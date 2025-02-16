@@ -1,5 +1,8 @@
 .project_detail {
-  background: #070A29;
+  background-image: url('../assets/homePageBackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
   color: #fff;
   padding: 3rem;
   min-height: 100vh;

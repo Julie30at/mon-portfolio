@@ -24,6 +24,7 @@
   object-fit: cover; 
   margin-top: 10rem;
   margin-bottom: 1.25rem; 
+  margin-left: 10rem;
 }
 
 .home h2 {
@@ -34,6 +35,7 @@
   display: inline-flex; 
   justify-content: center; 
   align-items: center; 
+  margin-left: 10rem;
 }
 
 .home h1.static-text {
@@ -45,6 +47,7 @@
   justify-content: center; 
   align-items: center; 
   margin-bottom: 0rem;
+  margin-left: 10rem;
 }
 
 .dynamic-text {
@@ -78,10 +81,19 @@
 
 @media (max-width: 1024px) { 
 
-.home_photo {
+  .home_photo {
   width: 15rem; 
   height: 15rem;
+  margin-left: 0;
 }
+
+  .home h2 {
+    margin-left: 0;
+  }
+
+  .home h1.static-text {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 768px){ 

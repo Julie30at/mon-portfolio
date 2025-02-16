@@ -10,12 +10,15 @@
   font-style: italic;
   font-weight: 500;
   text-align: left;
-  border-bottom: 0.125rem solid #D38312;
+  border: 0.125rem solid #D38312;
   padding: 1.25rem 0 0.625rem 6.25rem;
   margin-bottom: 2.5rem;
   margin-top: 0;
   color: #fff; 
-  background: linear-gradient(264.28deg, #512f80 -38.2%, #070a29 103.12%);
+  background-image: url('../assets/homePageBackground.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about_info {
@@ -248,16 +251,21 @@
 }
 
 @media (max-width: 1024px) {
-  .about {
+.about {
 margin-left: 0;
-margin-top: 60px;
 }
 
 .about_title {
   display: flex;
   justify-content: center;
   font-size: 2rem;
-  padding: 1rem 0rem;
+  padding: 2rem;
+  padding-top: 90px;
+}
+
+.about_info_presentation::before{
+  top: -4rem;
+  background: radial-gradient(54.98% 54.98% at 100% 0%, #A83279 0%, rgba(6, 19, 45, 0) 100%);
 }
 
 .about_info_presentation_introduction {
