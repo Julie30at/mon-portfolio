@@ -88,16 +88,16 @@ function About() {
             <h2>Bibliothèque</h2>
             <img src={reactLogo} alt="Logo React - Développement d'applications web dynamiques et réactives" title="Logo React - Développement d'applications web dynamiques et réactives" />
             <p>React est un outil qui permet de créer des interfaces modernes, rapides et interactives.</p>
-            <p>Il aide à concevoir des pages qui s'adaptent facilement aux besoins des utilisateurs, offrant ainsi une expérience fluide et agréable</p>
-            <p>Grâce à React, la mises à jour de l'interface est rapide et efficace, ce qui garantit une navigation sans lenteur ni interruption.</p>
+            <p>Il aide à concevoir des pages qui s'adaptent facilement aux besoins des utilisateurs, offrant ainsi une expérience fluide et agréable.</p>
+            <p>Grâce à React, la mise à jour de l'interface est rapide et efficace, ce qui garantit une navigation sans lenteur ni interruption.</p>
           </section>
           <section className="about_info_backend">
-            <h2>Backend & Base de données</h2>
+            <h2>Backend et Base de données</h2>
             <img src={nodeLogo} alt="Logo Node.js et Express - Backend rapide et scalable pour applications web" title="Logo Node.js et Express - Backend rapide et scalable pour applications web" />
             <p>Si React est la vitrine de votre application, Node.js et Express.js en sont les coulisses.</p>
             <p>Ils travaillent ensemble pour faire fonctionner votre site web en arrière-plan, en gérant les demandes des utilisateurs et en leur fournissant les informations qu'ils souhaitent.</p>
             <img src={mongoLogo} alt="Logo MongoDB - Gestion de données flexibles et évolutives avec MongoDB" title="Logo MongoDB - Gestion de données flexibles et évolutives avec MongoDB" />
-            <p>MongoDB est une base de données NoSQL idéale pour gérer des données complexes et non structurées, adaptée aux projets modernes.</p>
+            <p>MongoDB est une base de données NoSQL, idéale pour gérer des données complexes et non structurées, adaptée aux projets modernes.</p>
           </section>
           <section id="seo-section" className="about_info_seo">
             <h2>Optimisation pour les moteurs de recherche (SEO)</h2>

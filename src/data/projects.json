@@ -6,7 +6,7 @@
     "logo": "logoOhMyFood",
     "description": {
       "title": "Plateforme de commande de repas en ligne",
-      "paragraph": "J'ai développé l'interface visuelle du site en adoptant une approche mobile-first, garantissant ainsi une adaptabilité optimale à toutes les tailles d'écran, tout en utilisant SASS pour le CSS et en intégrant des animations soignées pour offrir une expérience utilisateur fluide et moderne."
+      "paragraph": "J'ai développé l'interface visuelle du site en adoptant une approche mobile-first, garantissant ainsi une adaptabilité optimale à toutes les tailles d'écran. J'ai également utilisé SASS pour le CSS en intégrant aussi des animations soignées pour offrir une expérience utilisateur fluide et moderne."
     },
     "technologies": ["logoHTML", "logoSassCSS", "logoFigma"],
     "githubLink": "https://github.com/Julie30at/Projet_Ohmyfood",
@@ -19,7 +19,7 @@
     "logo": "logoSophieBluel",
     "description": {
       "title": "Portfolio d’une architecte d’intérieur",
-      "paragraph": "J'ai développé la page de présentation des travaux de l'architecte, une page de connexion pour l'administrateur et une modale d'upload de médias, en utilisant JavaScript, en intégrant une API et les maquettes Figma."
+      "paragraph": "J'ai développé la page de présentation des travaux de l'architecte, une page de connexion pour l'administrateur et une modale d'upload de médias. J'ai utilisé JavaScript en intégrant une API et les maquettes Figma."
     },
     "technologies": ["logoFigma", "logoSwagger", "logoJS"],
     "githubLink": "https://github.com/Julie30at/projet_6_Portfolio_architecte_sophie_bluel"
@@ -56,7 +56,7 @@
     "logo": "logoArgentBank",
     "description": {
       "title": "Application bancaire",
-      "paragraph": "J'ai développé le front-end d'une application web responsive avec React et Redux, incluant l'authentification utilisateur, la gestion des profils, et l'intégration des API via Swagger. J'ai optimisé l'application en améliorant les performances et la maintenabilité grâce à des pratiques telles que le traitement des images et la création de composants réutilisables."
+      "paragraph": "J'ai développé le front-end de l'application web responsive avec React et Redux, qui inclue l'authentification utilisateur, la gestion des profils, et l'intégration des API via Swagger. J'ai optimisé l'application en améliorant les performances et sa maintenabilité, grâce à des pratiques telles que le traitement des images et la création de composants réutilisables."
     },
     "technologies": ["logoReact", "logoNodeJS", "logoMongoDB", "logoRedux", "logoSwagger"],
     "githubLink": "https://github.com/Julie30at/ArgentBank-Frontend"
