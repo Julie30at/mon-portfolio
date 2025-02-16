@@ -1,31 +1,14 @@
-import { useState, useEffect } from "react";
+import { lazy, Suspense } from "react";
 import Navbar from "../Components/Navbar"; 
 import julieAtPhoto from '../assets/webaju_logo.webp'; 
 import '../styles/home.css';
-import About from "./About";
-import Portfolio from "./Portfolio";
-import Cv from "./Cv";
-import Contact from "./Contact";
+
+const About = lazy(() => import("./About"));
+const Portfolio = lazy(() => import("./Portfolio"));
+const Cv = lazy(() => import("./Cv"));
+const Contact = lazy(() => import("./Contact"));
 
 function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 1024px)");
-
-    // Fonction qui met à jour `isMobile`
-    const handleResize = () => setIsMobile(mediaQuery.matches);
-
-    // Ajouter l'écouteur d'événement
-    mediaQuery.addEventListener("change", handleResize);
-
-    // Vérifier la taille initiale
-    handleResize();
-
-    // Nettoyage de l'écouteur quand le composant est démonté
-    return () => mediaQuery.removeEventListener("change", handleResize);
-  }, []);
-
   return (
     <div className="home_page">
       <Navbar /> 
@@ -44,15 +27,15 @@ function Home() {
         </h2>
       </section>
 
-      {/* Affichage du contenu des autres pages si on est en mobile/tablette */}
-      {isMobile && (
-        <>
+      {/* Affichage du contenu des autres pages seulement sur mobile/tablette */}
+      <Suspense fallback={<div>Chargement...</div>}>
+        <div className="extra-sections">
           <About />
           <Portfolio />
           <Cv />
           <Contact />
-        </>
-      )}
+        </div>
+      </Suspense>
     </div>
   );
 }

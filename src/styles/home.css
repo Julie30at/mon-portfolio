@@ -79,7 +79,16 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .extra-sections {
+    display: none; 
+  }
+}
+
 @media (max-width: 1024px) { 
+  .extra-sections {
+    display: block; 
+  }
 
   .home_photo {
   width: 15rem; 
