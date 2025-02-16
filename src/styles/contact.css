@@ -13,7 +13,8 @@
   font-style: italic;
   font-weight: 500;
   text-align: left;
-  border: 0.125rem solid #D38312;
+  border-top: 0.125rem solid #D38312;
+  border-bottom: 0.125rem solid #D38312;
   padding: 1.25rem 0 0.625rem 6.25rem;
   margin-top: 0;
   color: #fff; 
