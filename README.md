@@ -30,9 +30,9 @@ npm install
 
 4. Lancez le serveur de développement :
 
-npm start
+npm run dev
 
-5. Accédez à l'application dans votre navigateur à l'adresse suivante : http://localhost:3000
+5. Accédez à l'application dans votre navigateur à l'adresse suivante : http://localhost:5173/mon-portfolio/
 
 ## Technologies utilisées
 **React** : Pour la gestion de l'interface utilisateur.
