@@ -6,13 +6,16 @@ import '../styles/navbar.css';
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
-    // Fonction pour gérer l'ouverture/fermeture du menu burger
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
-        <div className={`navbar ${isOpen ? 'open' : ''}`}> {/* Ajout de la classe 'open' */}
+        <div className={`navbar ${isOpen ? 'open' : ''}`}> 
             <header className="navbar_header">
                 <div
                   className="navbar_burger"
@@ -23,14 +26,14 @@ function Navbar() {
                   role="button"  
                   tabIndex={0}  
                 >
-                 <div className="burger-icon"></div>
+                    <div className="burger-icon"></div>
                 </div>
                 <nav className={`navbar_links ${isOpen ? 'open' : ''}`}>
-                    <NavLink to="/home" end className="home-link" aria-label="Page d'accueil">Accueil</NavLink>
-                    <NavLink to="/about" aria-label="À propos de moi">À propos</NavLink>
-                    <NavLink to="/portfolio" aria-label="Mon portfolio">Portfolio</NavLink>
-                    <NavLink to="/cv" aria-label="Mon CV">CV</NavLink>
-                    <NavLink to="/contact" aria-label="Page de contact">Contact</NavLink>
+                    <NavLink to="/home" end className="home-link" aria-label="Page d'accueil" onClick={closeMenu}>Accueil</NavLink>
+                    <NavLink to="/about" aria-label="À propos de moi" onClick={closeMenu}>À propos</NavLink>
+                    <NavLink to="/portfolio" aria-label="Mon portfolio" onClick={closeMenu}>Portfolio</NavLink>
+                    <NavLink to="/cv" aria-label="Mon CV" onClick={closeMenu}>CV</NavLink>
+                    <NavLink to="/contact" aria-label="Page de contact" onClick={closeMenu}>Contact</NavLink>
                 </nav>
             </header>
             <footer className={`navbar_footer ${isOpen ? 'open' : ''}`}>
