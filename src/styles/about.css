@@ -254,6 +254,7 @@
 @media (max-width: 1024px) {
 .about {
 margin-left: 0;
+overflow-x: hidden;
 }
 
 .about_title {
@@ -344,7 +345,7 @@ margin-left: 0;
 
 .about_info_presenation_perso {
   font-size: 0.70rem;
-  padding: 0.80rem;
+  padding: 0rem;
 }
 
 .about_info_presenation_perso li {
@@ -354,6 +355,7 @@ margin-left: 0;
 .about_info_presenation_perso_CV a {
   padding: 0.3rem 1rem;
   font-size: 0.6rem;
+  margin-bottom: 2rem;
 }
 
 .about_info_langage h2,
