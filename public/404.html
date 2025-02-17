@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0;url=/mon-portfolio/" />
     <title>Page non trouvée</title>
+    <meta http-equiv="refresh" content="0;url=/mon-portfolio/" />
+    <script type="text/javascript">
+      // Vérifier si l'URL n'est pas la page d'accueil et rediriger vers la page d'accueil
+      const path = window.location.pathname;
+      // Rediriger vers la page de l'application React
+      window.location.replace(path.startsWith("/mon-portfolio") ? path : "/mon-portfolio/");
+    </script>
   </head>
   <body>
     <p>Redirection...</p>
