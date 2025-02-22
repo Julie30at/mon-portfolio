@@ -89,8 +89,12 @@
 @media (max-width: 768px){
 
     .slide {
-    height: 450px;
+     height: 450px;
   }
+
+  .slick-prev, .slick-next {
+    top: 10%;
+}
 
   .slick-dots li button:before {
     font-size: 8px;
