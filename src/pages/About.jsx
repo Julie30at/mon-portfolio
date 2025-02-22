@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import Navbar from "../Components/Navbar";
+import Carousel from "../Components/Carousel";
 import { NavLink } from "react-router-dom";
 import "../styles/about.CSS";
 import jsLogo from "../assets/logoJs.webp";
@@ -12,26 +12,45 @@ import figmaLogo from "../assets/logoFigma.webp";
 import postmanLogo from "../assets/logoPostman.webp";
 import trelloLogo from "../assets/logoTrello.webp";
 
+const slidesData = [
+  {
+    id: "react-section",
+    className: "about_info_library",
+    title: "Bibliothèque",
+    img: reactLogo,
+    alt: "Logo React - Développement d'applications web dynamiques et réactives",
+    text: [
+      "React est un outil qui permet de créer des interfaces modernes, rapides et interactives.",
+      "Il aide à concevoir des pages qui s'adaptent facilement aux besoins des utilisateurs, offrant ainsi une expérience fluide et agréable.",
+      "Grâce à React, la mise à jour de l'interface est rapide et efficace, ce qui garantit une navigation sans lenteur ni interruption.",
+    ],
+  },
+  {
+    id: "backend-section",
+    className: "about_info_backend",
+    title: "Backend et Base de données",
+    img: nodeLogo,
+    alt: "Logo Node.js et Express - Backend rapide et scalable pour applications web",
+    text: [
+      "Si React est la vitrine de votre application, Node.js et Express.js en sont les coulisses.",
+      "Ils travaillent ensemble pour faire fonctionner votre site web en arrière-plan, en gérant les demandes des utilisateurs et en leur fournissant les informations qu'ils souhaitent.",
+    ],
+    extraImg: mongoLogo,
+    extraAlt: "Logo MongoDB - Gestion de données flexibles et évolutives avec MongoDB",
+    extraText: "MongoDB est une base de données NoSQL, idéale pour gérer des données complexes et non structurées, adaptée aux projets modernes.",
+  },
+  {
+    id: "seo-section",
+    className: "about_info_seo",
+    title: "Optimisation pour les moteurs de recherche (SEO)",
+    text: [
+      "Le SEO (Search Engine Optimization) c'est l'ensemble des techniques qui permettent d'améliorer la visibilité d'un site web dans les moteurs de recherche comme Google.",
+      "Outils : Google Analytics, Google Search Console, GTmetrix, Lighthouse, Wave.",
+    ],
+  },
+];
+
 function About() {
-  useEffect(() => {
-    const handleAnchorScroll = (event) => {
-      if (event.target.tagName === "A" && event.target.getAttribute("href").startsWith("#")) {
-        event.preventDefault();
-        const targetId = event.target.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    };
-
-    document.addEventListener("click", handleAnchorScroll);
-
-    return () => {
-      document.removeEventListener("click", handleAnchorScroll);
-    };
-  }, []);
-
   return (
     <div>
       <Navbar />
@@ -43,7 +62,7 @@ function About() {
              <div className="about_info_presentation_introduction">
               <div className="about_info_presentation_text">
               <p>
-                Je suis <strong>Développeuse web</strong> Freelance spécialisée en <strong><a href="#react-section" aria-label="Voir la section React">React.</a></strong>
+                Je suis <strong>Développeuse web</strong> Freelance spécialisée en <strong>React.</strong>
               </p>
               <p>
                 Je conçois des interfaces visuelles modernes et réactives pour des applications et sites web.
@@ -56,7 +75,7 @@ function About() {
               </p>
               <p>
                 Je propose mes services pour la <strong>création de sites web</strong>, avec une attention particulière à l’optimisation 
-                <strong> <a href="#seo-section" aria-label="Voir la section SEO">SEO</a></strong> et à la gestion de projet pour garantir des solutions performantes et sur mesure.
+                <strong> SEO</strong> et à la gestion de projet pour garantir des solutions performantes et sur mesure.
               </p>
               </div>
               <div className="about_info_presenation_perso">
@@ -84,26 +103,7 @@ function About() {
                 <img src={sassCssLogo} alt="Logo Sass / CSS - Mise en forme avancée et responsive avec Sass et CSS" title="Logo Sass / CSS - Mise en forme avancée et responsive avec Sass et CSS" />
               </div>
           </section>
-          <section id="react-section" className="about_info_library">
-            <h2>Bibliothèque</h2>
-            <img src={reactLogo} alt="Logo React - Développement d'applications web dynamiques et réactives" title="Logo React - Développement d'applications web dynamiques et réactives" />
-            <p>React est un outil qui permet de créer des interfaces modernes, rapides et interactives.</p>
-            <p>Il aide à concevoir des pages qui s'adaptent facilement aux besoins des utilisateurs, offrant ainsi une expérience fluide et agréable.</p>
-            <p>Grâce à React, la mise à jour de l'interface est rapide et efficace, ce qui garantit une navigation sans lenteur ni interruption.</p>
-          </section>
-          <section className="about_info_backend">
-            <h2>Backend et Base de données</h2>
-            <img src={nodeLogo} alt="Logo Node.js et Express - Backend rapide et scalable pour applications web" title="Logo Node.js et Express - Backend rapide et scalable pour applications web" />
-            <p>Si React est la vitrine de votre application, Node.js et Express.js en sont les coulisses.</p>
-            <p>Ils travaillent ensemble pour faire fonctionner votre site web en arrière-plan, en gérant les demandes des utilisateurs et en leur fournissant les informations qu'ils souhaitent.</p>
-            <img src={mongoLogo} alt="Logo MongoDB - Gestion de données flexibles et évolutives avec MongoDB" title="Logo MongoDB - Gestion de données flexibles et évolutives avec MongoDB" />
-            <p>MongoDB est une base de données NoSQL, idéale pour gérer des données complexes et non structurées, adaptée aux projets modernes.</p>
-          </section>
-          <section id="seo-section" className="about_info_seo">
-            <h2>Optimisation pour les moteurs de recherche (SEO)</h2>
-            <p>Le SEO (Search Engine Optimization) c'est l'ensemble des techniques qui permettent d'améliorer la visibilité d'un site web dans les moteurs de recherche comme Google.</p>
-            <p><strong>Outils :</strong> Google Analytics, Google Search Console, GTmetrix, Lighthouse, Wave.</p>
-          </section>
+          <Carousel slides={slidesData} />
           <section className="about_info_other">
             <h2>AUTRES</h2>
             <div className="about_info_other_logo">

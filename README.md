@@ -42,15 +42,6 @@ npm run dev
 **Font Awesome** : Pour les icônes sociales.
 **Font Google** : Pour les polices personnalisées.
 
-## Contribuer
-Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une issue ou soumettre une pull request. Toutes les contributions sont les bienvenues !
-
-1. Forkez ce repository.
-2. Créez une branche pour votre fonctionnalité (git checkout -b feature-nouvelle-fonctionnalité).
-3. Committez vos changements (git commit -am 'Ajout d'une fonctionnalité').
-4. Poussez la branche (git push origin feature-nouvelle-fonctionnalité).
-5. Créez une nouvelle Pull Request.
-
 ## Auteurs
 Julie AT - Développeuse web freelance
 
