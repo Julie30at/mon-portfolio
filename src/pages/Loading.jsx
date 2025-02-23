@@ -1,5 +1,5 @@
 import '../styles/loading.css';
-import julieAtPhoto from '../assets/webaju_logo.webp'; 
+import julieAtPhoto from '../assets/webaju.fr.webp'; 
 
 function Loading() {
   return (

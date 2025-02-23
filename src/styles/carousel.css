@@ -32,10 +32,17 @@
   position: relative; 
 }
 
+button::after {
+  background: none !important;
+  transition: none !important;
+}
+
 .slick-prev, .slick-next {
   z-index: 1; 
   position: absolute;
   top: 20%;
+  -webkit-transform: none;
+  transform: none;
 }
 
 .slick-prev {
@@ -73,6 +80,8 @@
 
 .slick-dots li button:hover:before {
   color: #f0ba09; 
+  transform: scale(1.4);
+  transition: transform 0.2s ease-in-out;
 }
 
 @media (max-width: 1024px){
