@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import Navbar from "../Components/Navbar"; 
-import julieAtPhoto from '../assets/webaju.fr.webp'; 
+import julieAtPhoto from '../assets/webaju.webp'; 
 import '../styles/home.css';
 
 const About = lazy(() => import("./About"));
