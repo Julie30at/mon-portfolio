@@ -112,7 +112,6 @@
   border-radius: 50%; 
   object-fit: cover;
   margin-bottom: 0.625rem;
-  box-shadow: 0 0.2rem 0.75rem 0.375rem #D38312, 0 0.2rem 0.25rem #A83279;
   transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -164,6 +163,10 @@
   padding: 2rem;
   padding-top: 90px;
   margin-bottom: 10px;
+}
+
+.extra-sections .portfolio_title {
+    padding-top: 30px;
 }
 
 .portfolioProject{

@@ -96,7 +96,7 @@
   color: #D38312;
   font-family: 'Exo 2';
   padding: 1.25rem;
-  border-radius: 1.5625rem;
+  border-radius: 10px;
   min-width: 17.5rem;
   max-height: 25rem;
   opacity: 0;
@@ -253,6 +253,10 @@ overflow-x: hidden;
   font-size: 2rem;
   padding: 2rem;
   padding-top: 90px;
+}
+
+.extra-sections .about_title {
+    padding-top: 30px;
 }
 
 .about_info_presentation::before{

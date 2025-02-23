@@ -89,6 +89,7 @@ textarea {
   color: #fff;
   padding: 1.3rem;
   border-radius: 10px;
+  resize: none;
 }
 
 .form_group input::placeholder,
@@ -195,6 +196,10 @@ a {
     padding: 2rem;
     padding-top: 90px;
   }
+
+  .extra-sections .contact_title {
+    padding-top: 30px;
+}
 
   .contact_form{
     font-size: 1.2rem;

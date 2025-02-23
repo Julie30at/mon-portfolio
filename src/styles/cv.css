@@ -129,6 +129,10 @@
     padding-top: 90px;
   }
 
+  .extra-sections .cv_title {
+    padding-top: 30px;
+}
+
   .cv_julie {
     background: radial-gradient(50% 50% at 50% 50%, #A83279 0, rgba(6, 19, 45, 0) 100%);
     animation: zoomBackground 4s infinite ease-in-out;
