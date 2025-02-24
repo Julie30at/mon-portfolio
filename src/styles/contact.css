@@ -140,13 +140,13 @@ button:hover {
 .error {
   color: red;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-top: 0.5rem;
 }
 
 .success {
   color: #D38312;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
 }
 
